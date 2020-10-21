@@ -1,0 +1,43 @@
+@import '../../style/variable';
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 1;
+
+   .date-title {
+      text-transform: capitalize;
+   }
+
+   .right-side {
+      display: flex;
+
+      .filter-btn {
+         font-size: .9rem;
+         color: #fff;
+         padding: .5rem;
+         border: none;
+         background: $backgroundContent;
+      }
+
+      .filter-btn:hover {
+      cursor: pointer;
+      color: $grayColor;
+      box-shadow: inset 0px 0px 34px -10px rgba(0,0,0,1);
+      border-bottom-left-radius: .14rem;
+      border-bottom-right-radius: .14rem;
+
+      .filter-btn:nth-last-child(1){
+         margin-left: 1rem;
+      }
+   }
+   
+   .active {
+      color: $grayColor;
+      box-shadow: inset 0px 0px 34px -10px rgba(0,0,0,1);
+      border-bottom-left-radius: .14rem;
+      border-bottom-right-radius: .14rem;
+      }
+   }
+}

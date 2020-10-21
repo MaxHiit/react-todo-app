@@ -1,0 +1,23 @@
+@import './variable';
+
+
+.app {
+   background: $backgroundColor;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &-container {
+      width: 90%;
+      max-width: 700px;
+      background: $backgroundContent;
+      padding: 0 1.2rem 1.2rem 1.2rem;
+      box-shadow: 10px 10px 24px -5px rgba(0,0,0,0.75);
+   }
+
+   .todo-list {
+      margin-top: 2rem;
+   }
+}

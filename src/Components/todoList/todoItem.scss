@@ -1,0 +1,41 @@
+@import '../../style/variable';
+
+.todo-item {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   // align-items: center;
+   padding: 1rem 0;
+   color: $grayColor;
+
+   &:nth-child(1n) {
+      border-top: 1px solid $grayColor;
+   }
+
+   &:nth-last-child(1) {
+      border-bottom: 1px solid $grayColor;
+   }
+
+   &__left{
+      display: flex;
+
+      input[type=checkbox] {
+         margin-right: 1rem;
+      }
+
+      .switch-label {
+         color: $whiteColorText;
+      }
+   }
+
+   .delete-icon {
+      color: $grayColor;
+      cursor: pointer;
+   }
+
+
+}
+
+.validate {
+   opacity: .2;
+}
